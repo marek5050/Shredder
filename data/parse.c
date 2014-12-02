@@ -74,7 +74,7 @@ void getsalaries(){
 
   while (fgets(curplayer, 300, fp) != EOF){
    if(row++ == 213) break;
-    printf ("%s\n", curplayer);
+   // printf ("%s\n", curplayer);
     char* tok;
     tok = strtok (curplayer, ",");
     //printf ("First: %s\n", tok);
@@ -114,7 +114,7 @@ void getsalaries(){
    
     for(i = 0; i < max; i++ ){
   	if(strcmp(name,ptr[i].name)==0){	
-	  	printf("%s %d \n",ptr[i].name, salary);	
+	 // 	printf("%s %d \n",ptr[i].name, salary);	
 		ptr[i].salary = salary;
     }
    }
@@ -149,7 +149,7 @@ int main (){
   getsalaries();
 
   for (j = 0; j < 33; j++){
-    printf ("%s %s \n",k[j].name,  k[j].salary);
+    printf ("%s %d \n",k[j].name,  k[j].salary);
   }
 
 return 0;

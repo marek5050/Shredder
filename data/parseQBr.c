@@ -13,11 +13,11 @@ struct player {
   double std_dev;
 };
 
-void copyMe(char *from, char *to){
+void copyMe1(char *from, char *to){
   while(*to++=*from++);
 }
 
-int main () {
+int main1 () {
   FILE *fp;
   fp = fopen("FantasyPros_2014_Week_12_QB_Rankings.csv", "r");
   struct player playersarr[36]; //= malloc (36 * sizeof (struct player*));
@@ -36,11 +36,11 @@ int main () {
     //printf ("First: %s\n", tok);
     playersarr[i].rank = atoi(tok);
 
-    copyMe(strtok(NULL, ","), playersarr[i].name);
+    copyMe1(strtok(NULL, ","), playersarr[i].name);
     
     //printf ("name: %s\n", playersarr[i].name);
-    copyMe(strtok(NULL, ","), playersarr[i].team);
-    copyMe(strtok(NULL, ","), playersarr[i].matchup);
+    copyMe1(strtok(NULL, ","), playersarr[i].team);
+    copyMe1(strtok(NULL, ","), playersarr[i].matchup);
     playersarr[i].best_rank = atoi(strtok(NULL, ","));
     playersarr[i].worst_rank = atoi(strtok(NULL, ","));
     tok = strtok(NULL, ",");
