@@ -1,0 +1,65 @@
+./parse
+Done reading!
+Done reading!
+Done reading!
+Done reading!
+Done reading!
+Done reading!
+Done populating!
+Player: Andrew Luck Salary: 10300
+Player: DeMarco Murray Salary: 9000
+Player: Tre Mason Salary: 5600
+Player: Josh Gordon Salary: 7800
+Player: Mike Wallace Salary: 6900
+Player: Charles Johnson Salary: 5200
+Player: Kyle Rudolph Salary: 5100
+Player: Cody Parkey Salary: 5000
+Player: Houston Texans Salary: 5100
+Total Salary: 60000
+
+Player: Andrew Luck Salary: 10300
+Player: DeMarco Murray Salary: 9000
+Player: Tre Mason Salary: 5600
+Player: Josh Gordon Salary: 7800
+Player: Mike Wallace Salary: 6900
+Player: Charles Johnson Salary: 5200
+Player: Kyle Rudolph Salary: 5100
+Player: Cody Parkey Salary: 5000
+Player: Philadelphia Eagles Salary: 5100
+Total Salary: 60000
+
+Player: Andrew Luck Salary: 10300
+Player: DeMarco Murray Salary: 9000
+Player: Tre Mason Salary: 5600
+Player: Josh Gordon Salary: 7800
+Player: Mike Wallace Salary: 6900
+Player: Charles Johnson Salary: 5200
+Player: Garrett Graham Salary: 5100
+Player: Cody Parkey Salary: 5000
+Player: Houston Texans Salary: 5100
+Total Salary: 60000
+
+Player: Andrew Luck Salary: 10300
+Player: DeMarco Murray Salary: 9000
+Player: Tre Mason Salary: 5600
+Player: Josh Gordon Salary: 7800
+Player: Mike Wallace Salary: 6900
+Player: Charles Johnson Salary: 5200
+Player: Garrett Graham Salary: 5100
+Player: Cody Parkey Salary: 5000
+Player: Philadelphia Eagles Salary: 5100
+Total Salary: 60000
+
+Player: Andrew Luck Salary: 10300
+Player: DeMarco Murray Salary: 9000
+Player: Tre Mason Salary: 5600
+Player: Josh Gordon Salary: 7800
+Player: Mike Wallace Salary: 6900
+Player: Charles Johnson Salary: 5200
+Player: Austin Seferian-Jenkins Salary: 5100
+Player: Cody Parkey Salary: 5000
+Player: Houston Texans Salary: 5100
+Total Salary: 60000
+
+
+Number of rosters!!!!! 171784253
