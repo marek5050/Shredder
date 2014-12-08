@@ -1,7 +1,7 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 #include <string.h>
-
+#include <unistd.h>
 
 #define MAX_QB 38
 #define MAX_RB 117
@@ -319,19 +319,39 @@ int main (){
     printf ("%s %d \n",k[j].name,  k[j].salary);
   }
   */
-  makeRosters();
+ // makeRosters();
  
   int  z = 0;
   for(;z < 32 ; z++){
-    struct plays team[32];
-    teams[z] = &team;
+    struct plays teamPlays[100];
+    teams[z] = &teamPlays;
   }
+
+char *prefix = "playcsv/Fantasy_";
+char str[80];
+//strcat (str, foo);
+
 
   FILE *teamplays;
   for (z = 0; z < 32; z++) {
-teamplays = 
-  }
+	strcpy(str,  prefix);
+	strcat (str, dst[z].name);
+	strcat( str, ".csv");
+	
+	printf("%s \n" , str);
+       
+	if(access(str, F_OK) != -1){
+	  printf("Yes \n");
+ 	  teamplays = fopen(str,"r" );
+	  readPlays (teamplays,teams[z], 20);
+	
+    	  fclose(teamplays);
+	}else{
+	  printf("No \n");
 
+	}
+  }
+/*
   for (i = 0; i < 5; i++) {
     j = i * 100000;
     printf ("QB: %s Salary: %d\n", qb[rosters1h[j].qb].name, qb[rosters1h[j].qb].salary);
@@ -345,7 +365,7 @@ teamplays =
     printf ("DST: %s Salary: %d\n", dst[rosters1h[j].dst].name, dst[rosters1h[j].dst].salary);
     printf ("Total Salary: %d\n\n", rosters1h[j].total_amount);
   }
-  
-  printf ("\nNumber of rosters!!!!! %d\n", idx1h + idx2h);
+ */ 
+ // printf ("\nNumber of rosters!!!!! %d\n", idx1h + idx2h);
 return 0;
 }
